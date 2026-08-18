@@ -11,39 +11,54 @@ MAX_RAM="6G"
 # Restart delay
 RESTART_DELAY=10
 
-echo "Starting Paper Minecraft Server..."
+# Set to true if you want automatic restart after a crash
+AUTO_RESTART=true
+
+echo "================================="
+echo "      Paper Minecraft Server"
+echo "================================="
 echo "Jar: $JAR"
 echo "RAM: $MIN_RAM - $MAX_RAM"
+echo
+
+# Handle Ctrl+C / SIGTERM
+shutdown() {
+    echo
+    echo "Stopping server..."
+    AUTO_RESTART=false
+}
+
+trap shutdown SIGINT SIGTERM
 
 while true
 do
+    echo "Starting Paper..."
 
-java \
--Xms$MIN_RAM \
--Xmx$MAX_RAM \
--XX:+UseG1GC \
--XX:+ParallelRefProcEnabled \
--XX:MaxGCPauseMillis=200 \
--XX:+UnlockExperimentalVMOptions \
--XX:+DisableExplicitGC \
--XX:+AlwaysPreTouch \
--XX:G1NewSizePercent=30 \
--XX:G1MaxNewSizePercent=40 \
--XX:G1HeapRegionSize=8M \
--XX:G1ReservePercent=20 \
--XX:G1HeapWastePercent=5 \
--XX:G1MixedGCCountTarget=4 \
--XX:InitiatingHeapOccupancyPercent=15 \
--XX:G1MixedGCLiveThresholdPercent=90 \
--XX:G1RSetUpdatingPauseTimePercent=5 \
--XX:SurvivorRatio=32 \
--XX:+PerfDisableSharedMem \
--jar $JAR nogui
+    java \
+        -Xms$MIN_RAM \
+        -Xmx$MAX_RAM \
+        -XX:+UseG1GC \
+        -XX:+ParallelRefProcEnabled \
+        -XX:MaxGCPauseMillis=200 \
+        -XX:+DisableExplicitGC \
+        -XX:+AlwaysPreTouch \
+        -XX:+PerfDisableSharedMem \
+        -jar "$JAR" nogui
 
+    EXIT_CODE=$?
 
-echo "Server stopped."
+    echo
+    echo "Server stopped with exit code: $EXIT_CODE"
 
-echo "Restarting in $RESTART_DELAY seconds..."
-sleep $RESTART_DELAY
+    # Don't restart after Ctrl+C / SIGTERM
+    if [ "$AUTO_RESTART" = false ]; then
+        echo "Server shutdown requested."
+        break
+    fi
 
+    echo "Restarting in $RESTART_DELAY seconds..."
+    sleep "$RESTART_DELAY"
 done
+
+echo "Server process ended."
+exit 0
