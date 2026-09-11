@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"origins:fire_immunity",
+		"origins:nether_spawn",
+		"origins:water_vulnerability",
+		"origins:slow_falling",
+		"ort:large_fireball",
+		"origins:hotblooded",
+		"origins:sprint_jump"
+	],
+	"icon": {
+		"item": "minecraft:ghast_tear"
+	},
+	"order": 1,
+	"impact": 3,
+	"description": "Ghast is a large, floating mob found in the Nether dimension. That can shoot fireballs."
+}
