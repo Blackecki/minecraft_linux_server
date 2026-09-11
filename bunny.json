@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "moborigins:timid_creature",
+    "moborigins:better_berries",
+    "moborigins:careful_gatherer",
+    "moborigins:sly",
+    "origins:fall_immunity",
+    "moborigins:flower_power",
+    "origins:sprint_jump",
+    "origins:vegetarian"
+  ],
+  "icon": "minecraft:carrot",
+  "order": 2,
+  "impact": 1,
+  "description": "Bunnies are herbivores, feeding on grasses, vegetables, and fruits, and they are known for their quick reflexes and ability to hop rapidly to avoid predators. A bunny is a small, fluffy mammal typically known for its long ears, short tail, and soft fur. Bunnies, or rabbits, belong to the family Leporidae and are often characterized by their twitching noses, large hind legs built for jumping, and small, delicate paws."
+}

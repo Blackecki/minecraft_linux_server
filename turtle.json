@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "moborigins:surface_slowness",
+    "monsterorigins:slowness",
+    "origins:like_water",
+    "moborigins:prismarine_skin",
+    "fantasyorigins:strong_skin",
+    "moborigins:water_breathing",
+    "fantasyorigins:natural_armor",
+    "origins:natural_armor",
+    "monsterorigins:double_health",
+    "moborigins:surface_weakness",
+    "moborigins:mining_fatigue_immune",
+    "moborigins:guardian_ally",
+    "origins:water_vision",
+    "origins:aqua_affinity"
+  ],
+  "icon": "minecraft:turtle_scute",
+  "order": 2,
+  "impact": 1,
+  "description": "Turtles are reptiles known for their distinctive shell, which serves as a protective shield for their body. These creatures belong to the order Testudines and are found in a variety of habitats, including oceans, rivers, lakes, and even deserts. They are ancient animals, with fossil records dating back over 220 million years."
+}

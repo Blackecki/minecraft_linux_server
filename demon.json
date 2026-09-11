@@ -1,0 +1,31 @@
+{
+	"powers": [
+		"origins:sprint_jump",
+		"monsterorigins:land_night_vision",
+		"monsterorigins:better_gold_weapons",
+		"fantasyorigins:double_health",
+		"monsterorigins:undead_ally",
+		"origins:hotblooded",
+		"monsterorigins:better_gold_armour",
+		"fantasyorigins:daylight_sensitive",
+		"origins:flame_particles",
+		"origins:nether_spawn",
+		"moborigins:sly",
+		"monsterorigins:piglin_ally",
+		"origins:fire_immunity",
+		"origins:burning_wrath",
+		"origins:fall_immunity",
+		"monsterorigins:wither_immunity",
+		"monsterorigins:freeze_immune",
+		"monsterorigins:apply_wither_effect",
+		"monsterorigins:creeper_ally",
+		"monsterorigins:zombified_piglin_allies"
+	],
+	"icon": {
+		"item": "minecraft:magma_block"
+	},
+	"unchoosable": false,
+	"order": 1,
+	"impact": 3,
+	"description": "A demon is typically described as a supernatural being, often associated with evil or malevolence, found in various mythologies, religions, and folklore. The concept of demons varies widely across cultures."
+}

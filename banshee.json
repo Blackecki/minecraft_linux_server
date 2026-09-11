@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"moborigins:water_breathing",
+		"origins:water_vision",
+		"monsterorigins:sonic_boom",
+		"origins:aqua_affinity",
+		"monsterorigins:water_combatant",
+		"moborigins:mining_fatigue_immune",
+		"origins:swim_speed",
+		"monsterorigins:undead_ally",
+		"moborigins:guardian_ally",
+		"origins:like_water"
+	],
+	"icon": {
+		"item": "minecraft:goat_horn"
+	},
+	"order": 1,
+	"impact": 3,
+	"description": "A Banshee is said to be a fairy in Irish legend and her scream is believed to be an omen of death. The scream is also called caoine which means keening and is a warning that there will be an imminent death in the family and as the Irish families blended over time, it is said that each family has its own Banshee!"
+}

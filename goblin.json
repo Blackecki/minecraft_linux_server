@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"fantasyorigins:infinite_haste",
+		"origins:cat_vision",
+		"fantasyorigins:magic_resistance",
+		"fantasyorigins:small_body",
+        "monsterorigins:scare_villagers",
+        "moborigins:item_collector",
+        
+        
+	],
+	"icon": {
+		"item": "minecraft:gold_nugget"
+	},
+	"order": 1,
+	"impact": 2,
+	"description": "Similar to dwarves, goblins are small creatures that value loot. Although, goblins are more mischevious."
+}
